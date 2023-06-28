@@ -9,7 +9,7 @@
     "test": "ng test",
     "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
     "build:href": "ng build --base-href ./",
-    "delete:docs": "DEL docs",
+    "delete:docs": "rmdir /s docs",
     "copy:dist": "xcopy /E /I .\\dist\\gifs-app\\ .\\docs"
   },
   "private": true,
