@@ -9,7 +9,7 @@ export class GifsService {
 
   private _tagsHistory: string[] = [];
   private apiKey:string = 'EcHfcwJjUT0USPTTKeBz9Zq3FeHbSpYH';
-  private serviceUrl: string = 'http://api.giphy.com/v1/gifs';
+  private serviceUrl: string = 'https://api.giphy.com/v1/gifs';
 
   constructor( private http: HttpClient ) {
     this.loadLocalStorage();
