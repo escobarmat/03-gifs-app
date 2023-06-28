@@ -1,6 +1,11 @@
 <div class="text-center card mb-2 bg-dark">
 
-  <shared-lazy-image class="text-white"></shared-lazy-image>
+  <shared-lazy-image
+    [url] = 'gif.images.downsized_medium.url'
+    [alt]="gif.title || 'No Name'"
+    [heightImg]="(gif.images.downsized_medium.height)"
+    [widthImg]="(gif.images.downsized_medium.width)"
+  ></shared-lazy-image>
   <!-- <img
   [src]="gif.images.downsized_medium.url"
   [alt]="gif.title"
